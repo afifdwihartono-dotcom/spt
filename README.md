@@ -1,6 +1,6 @@
 # Dashboard Matriks Perjalanan Dinas
 
-Dashboard  untuk mengelola data perjalanan dinas pegawai (Surat Tugas / ST), lengkap dengan backend (Next.js API Routes + Prisma + PostgreSQL) sehingga data tersimpan permanen di database, bukan hanya di browser.
+Dashboard   untuk mengelola data perjalanan dinas pegawai (Surat Tugas / ST), lengkap dengan backend (Next.js API Routes + Prisma + PostgreSQL) sehingga data tersimpan permanen di database, bukan hanya di browser.
 
 Sudah terisi data awal dari `SPT.xlsx` (212 catatan perjalanan dinas).
 
