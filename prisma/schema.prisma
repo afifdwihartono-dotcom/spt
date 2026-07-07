@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Satu baris = satu Surat Tugas (ST) perjalanan dinas untuk satu pegawai
+model Trip {
+  id           String    @id @default(cuid())
+  nama         String
+  noST         String?
+  tglST        DateTime?
+  acara        String?
+  tujuan       String?
+  tglBerangkat DateTime?
+  tglPulang    DateTime?
+  kendaraan    String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  @@index([nama])
+  @@index([tujuan])
+  @@index([tglBerangkat])
+}
